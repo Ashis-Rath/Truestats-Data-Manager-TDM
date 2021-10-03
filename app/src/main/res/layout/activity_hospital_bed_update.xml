@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/statisticbg"
+    tools:context=".HospitalBedUpdate">
+
+    <TextView
+        android:id="@+id/truestatsLogoCoHosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kozukagothicbold"
+        android:text="@string/truestats"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dataLogoCoHosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kozukagothicbold"
+        android:text="@string/data"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/managerLogoCoHosp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/managerLogoCoHosp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/managerLogoCoHosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/kozukagothicbold"
+        android:text="@string/manager"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/truestatsLogoCoHosp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/truestatsLogoCoHosp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/backbtnCoBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/CoHospTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuibold"
+        android:text="Current COVID Beds Statistics"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CoHospTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CoHospTitle"
+            app:layout_constraintVertical_bias="0.065">
+
+            <TextView
+                android:id="@+id/nameOfOrgTVCoHosp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeuibold"
+                android:gravity="bottom|center_horizontal"
+                android:hint="@string/name_of_organisation"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/addressOfOrgTVCoHosp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/calibriregular"
+                android:gravity="center_horizontal|top"
+                android:hint="@string/address_of_organisation"
+                android:textColor="#090909" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView17Oxygen"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginRight="29dp"
+                        android:background="@drawable/box"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/editCoHospTotalVentilatorBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="Total Beds:"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView17Oxygen"
+                        app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                        app:layout_constraintHorizontal_bias="0.078"
+                        app:layout_constraintStart_toStartOf="@+id/textView17Oxygen"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19Oxygen"
+                        app:layout_constraintVertical_bias="0.465" />
+
+                    <TextView
+                        android:id="@+id/CoHospTotalVentilatorBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCoHospTotalVentilatorBed"
+                        app:layout_constraintEnd_toStartOf="@+id/editCoHospVacantVentilatorBed"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospTotalVentilatorBed"
+                        app:layout_constraintTop_toTopOf="@+id/editCoHospTotalVentilatorBed"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/CoHospVacantVentilatorBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCoHospVacantVentilatorBed"
+                        app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospVacantVentilatorBed"
+                        app:layout_constraintTop_toTopOf="@+id/editCoHospVacantVentilatorBed"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/textView19Oxygen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="@string/icu_ventilator_beds"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView17Oxygen"
+                        app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                        app:layout_constraintStart_toStartOf="@+id/textView17Oxygen"
+                        app:layout_constraintTop_toTopOf="@+id/textView17Oxygen"
+                        app:layout_constraintVertical_bias="0.13" />
+
+                    <TextView
+                        android:id="@+id/editCoHospVacantVentilatorBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="@string/vacant_beds"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView17Oxygen"
+                        app:layout_constraintHorizontal_bias="0.576"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospTotalVentilatorBed"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19Oxygen"
+                        app:layout_constraintVertical_bias="0.465" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginRight="29dp"
+                        android:background="@drawable/box"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="@string/oxygen_beds"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                        app:layout_constraintEnd_toEndOf="@+id/textView24"
+                        app:layout_constraintStart_toStartOf="@+id/textView24"
+                        app:layout_constraintTop_toTopOf="@+id/textView24"
+                        app:layout_constraintVertical_bias="0.13" />
+
+                    <TextView
+                        android:id="@+id/editCoHospTotalOxygenBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="Total Beds:"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView24"
+                        app:layout_constraintHorizontal_bias="0.078"
+                        app:layout_constraintStart_toStartOf="@+id/textView24"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25"
+                        app:layout_constraintVertical_bias="0.465" />
+
+                    <TextView
+                        android:id="@+id/CoHospTotalOxygenBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCoHospTotalOxygenBed"
+                        app:layout_constraintEnd_toStartOf="@+id/editCoHospVacantOxygenBed"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospTotalOxygenBed"
+                        app:layout_constraintTop_toTopOf="@+id/editCoHospTotalOxygenBed"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/editCoHospVacantOxygenBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="@string/vacant_beds"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView24"
+                        app:layout_constraintHorizontal_bias="0.576"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospTotalOxygenBed"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25"
+                        app:layout_constraintVertical_bias="0.465" />
+
+                    <TextView
+                        android:id="@+id/CoHospVacantOxygenBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCoHospVacantOxygenBed"
+                        app:layout_constraintEnd_toEndOf="@+id/textView24"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospVacantOxygenBed"
+                        app:layout_constraintTop_toTopOf="@+id/editCoHospVacantOxygenBed"
+                        app:layout_constraintVertical_bias="0.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginRight="29dp"
+                        android:background="@drawable/box"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/editCoHospTotalNormalBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="Total Beds:"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+                        app:layout_constraintEnd_toEndOf="@+id/textView30"
+                        app:layout_constraintHorizontal_bias="0.078"
+                        app:layout_constraintStart_toStartOf="@+id/textView30"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31"
+                        app:layout_constraintVertical_bias="0.465" />
+
+                    <TextView
+                        android:id="@+id/normalBedDatabaseValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCoHospTotalNormalBed"
+                        app:layout_constraintEnd_toStartOf="@+id/editCoHospVacantNormalBed"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospTotalNormalBed"
+                        app:layout_constraintTop_toTopOf="@+id/editCoHospTotalNormalBed"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/vacantNormalBedDatabaseValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/editCoHospVacantNormalBed"
+                        app:layout_constraintEnd_toEndOf="@+id/textView30"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospVacantNormalBed"
+                        app:layout_constraintTop_toTopOf="@+id/editCoHospVacantNormalBed"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="@string/icu_ventilator_beds"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+                        app:layout_constraintEnd_toEndOf="@+id/textView30"
+                        app:layout_constraintStart_toStartOf="@+id/textView30"
+                        app:layout_constraintTop_toTopOf="@+id/textView30"
+                        app:layout_constraintVertical_bias="0.13" />
+
+                    <TextView
+                        android:id="@+id/editCoHospVacantNormalBed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="@string/vacant_beds"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+                        app:layout_constraintEnd_toEndOf="@+id/textView30"
+                        app:layout_constraintHorizontal_bias="0.576"
+                        app:layout_constraintStart_toEndOf="@+id/editCoHospTotalNormalBed"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31"
+                        app:layout_constraintVertical_bias="0.465" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="29dp"
+                android:fontFamily="@font/kozukagothicbold"
+                android:gravity="center_horizontal"
+                android:text="In Order to Update a particular field, Click on the name of the field." />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/backBtnTV"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backbtnCoBed"
+        app:layout_constraintEnd_toStartOf="@+id/truestatsLogoCoHosp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backbtnCoBed" />
+
+    <ProgressBar
+        android:id="@+id/progressBarBedVacantNormal"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutusbackground"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kozukagothicbold"
+        android:text="@string/truestats"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="76dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:cropToPadding="false"
+        android:paddingLeft="18dp"
+        android:paddingBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_tdm_foreground_image" />
+
+    <ImageView
+        android:id="@+id/backbtnCoBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/ic_backaboutus" />
+
+    <TextView
+        android:id="@+id/managerLogoCoHosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuibold"
+        android:text="About Us:"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/about_us_frame"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="In the late December 2019, the first case of pneumonia caused by a novel corona virus in Wuhan city, China, was diagnosed. Person to person transmission of novel coronavirus was confirmed by China on 21 January 2020 with more than 200 diagnosed cases and 4 deaths. On 30th January 2020, WHO declared the Chinese outbreak of COVID-19 to be a Public Health Emergency of International Concern posing a high risk to countries with the poor health care system. On 11 March 2020 WHO declared COVID-19 outbreak as a pandemic with more than 11800 cases and 4291 deaths in 114 countries. \n As of now, we all have been affected by the current COVID-19 pandemic. COVID-19 is killing people on a large scale. As of May 23, 2021, more than 16.7Cr people across the World have tested positive for COVID-19 with 34.6 Lakh deaths. The primary challenge during this pandemic is the existing Medical Infrastructure unable to cope with the increasing number of cases. "
+                    android:textColor="#323131" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Understanding the Challenge!"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#323131"
+                    android:text="If we simplify and break down this Challenge, we will have two problems at our disposal. The former one is the availability of sufficient beds which can obviously be solved by increasing its number according to our population density and the latter one being the inefficient use of existing beds due to lack of efficient communication between Hospitals, Medical Assistance providing Organizations and the Public." />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:text="Going in deeper with the Latter one:"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="On 16 April, 2021: Vinay Srivastava in UP’s Balrampur aged 65, A journalist died with COVID-19 symptoms after tweeting his declining oxygen levels in a desperate search for medical help. He tweeted in Hindi that his oxygen levels had dropped to 52 - far below the normal levels of 95 or above. \n &quot;I am 65 years old. Plus, I have spondylitis, due to which my oxygen has reduced to 52. Nobody at the hospital lab, or the doctor is picking the phone.&quot;"
+                    android:textColor="#323131" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/vinaysrivastav" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="On 23 April, 2021: Ravi Singhal in UP’s Agra aged 47 diagnosed with COVID-19 could not be saved despite his wife’s desperate last ditch attempts to revive his breathing through mouth-to-mouth cardiopulmonary resuscitation (CPR). His wife Renu Singhal took Ravi to at least four private hospitals before arriving at Sarojini Naidu Medical College (SNMC) and Hospital, where too she was denied admission."
+                    android:textColor="#323131" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/rinku_singhal" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="Was this Avoidable?"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#323131"
+                    android:text="In the first case, if the precise availability of Oxygen with its location had been known to Late Vinay Srivastava, instead of waiting for an already collapsed Health Care System to full fill the Oxygen requirement, he could have worked in the right direction to procure Oxygen himself within his own arrangement and thereby increasing his chances of survival. \n In the Second case, Renu Singhal took her husband to five different Hospitals where there were no beds available for any new admission. If the precise number of beds available in the nearby Hospitals were known to Renu beforehand, she could have saved the precious time and taken her husband only to that Hospital or Health Care Center which was open to new admission, increasing his chances of survival. \n So the possibility of saving such precious life is always higher with an efficient communication network between the Health Care System and the Public." />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="What is Truestats?"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#323131"
+                    android:text="Truestats is a Mobile Application designed and developed with an Intention to bridge this gap between the Health Care System and the Public to save precious life. Using this Application, the person in need can track down the precise details of availability of Beds and Oxygen to work in the right direction and increase their chances of survival. Real-Time details of both Bed Availability at the Hospital and Oxygen availability with Oxygen suppliers can be obtained. This will help people save their time and resources during their need of the hour." />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="Designed &amp; Developed by: Ashis Rath"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

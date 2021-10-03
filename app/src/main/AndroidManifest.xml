@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ashisrath.tdm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TDM">
+        <activity android:name=".HospitalUpdateVacantNormalBed" android:screenOrientation="portrait"> </activity>
+        <activity android:name=".HospitalUpdateTotalNormalBed" android:screenOrientation="portrait"/>
+        <activity android:name=".HospitalUpdateTotalOxygenBed" android:screenOrientation="portrait"/>
+        <activity android:name=".HospitalUpdateVacantOxygenBed" android:screenOrientation="portrait"/>
+        <activity android:name=".HospitalUpdateVacantVentilatorBed" android:screenOrientation="portrait"/>
+        <activity android:name=".HospitalUpdateTotalVentilatorBed" android:screenOrientation="portrait"/>
+        <activity android:name=".CovidUpdateVacantOxygenBed" android:screenOrientation="portrait"/>
+        <activity android:name=".CovidUpdateTotalOxygenBed" android:screenOrientation="portrait"/>
+        <activity android:name=".CovidUpdateVacantVentilatorBed" android:screenOrientation="portrait"/>
+        <activity android:name=".CovidUpdatetotalVentilatorBed" android:screenOrientation="portrait"/>
+        <activity android:name=".CovidBed" android:screenOrientation="portrait"/>
+        <activity android:name=".editProfilePrivateNumber" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Manual"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".editProfileLocationURL"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ViewProfileActivity" />
+        <activity
+            android:name=".editProfilePublicNumber"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ViewProfileActivity" />
+        <activity
+            android:name=".editProfileAddress"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ViewProfileActivity" />
+        <activity
+            android:name=".editProfileName"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ViewProfileActivity" />
+        <activity
+            android:name=".ViewProfileActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".extraOxygenStockUpdate"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".OxygenSupplyUpdate" />
+        <activity
+            android:name=".OxygenSupplyUpdate"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".HospitalBedUpdate"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SigninActivity" />
+        <activity android:name=".HomePage" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SignupActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SigninActivity" />
+        <activity
+            android:name=".SigninActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
