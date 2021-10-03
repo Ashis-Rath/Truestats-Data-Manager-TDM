@@ -32,8 +32,6 @@ Screenshots of the Appication:
 
 ![Screenshot_20211003-124730_TDM](https://user-images.githubusercontent.com/91816350/135744761-0e784bb8-8389-4bce-8ab8-a89624c032fa.jpg)
 
-![Screenshot_20211003-124740_TDM](https://user-images.githubusercontent.com/91816350/135744767-38c23e4c-b4a5-487a-9919-fba08dc393dd.jpg)
-
 ![Screenshot_20211003-124753_TDM](https://user-images.githubusercontent.com/91816350/135744779-823140e7-af5a-4c65-81a7-78507c9c00ce.jpg)
 
 ![Screenshot_20211003-124808_TDM](https://user-images.githubusercontent.com/91816350/135744791-0c8766ea-a346-4a9c-892e-d81777f8d67f.jpg)
